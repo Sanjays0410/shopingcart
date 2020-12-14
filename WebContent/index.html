@@ -1,0 +1,325 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Shopping Cart</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>website | store</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link
+	href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+	rel="stylesheet">
+<link rel="stylesheet" type="text/css"
+	href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+	<div class="header">
+		<div class="container">
+
+			<div class="navbar">
+
+				<div class="logo">
+					<a href="index.jsp"><img src="" width="69px"></a>
+				</div>
+				<nav>
+				<ul id="menuItems">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="products.jsp">Products</a></li>
+					<li><a href="About.html">About</a></li>
+					<li><a href=" http://www.crudsinfotech.com/">Contact</a></li>
+					<li><a href="login.jsp">SignIN/SignUp</a></li>
+				</ul>
+				</nav>
+				<a href="cart.jsp"><img src="images/cart.png" width="30px"
+					height="30px"></a> <img src="images/menu.png" class="menu"
+					onclick="menutoggle()">
+			</div>
+			<div class="row">
+				<marquee class="margin">
+					Shop here and enjoy the new Shopping Experience With Free
+					Shipping.. <br> Get Flat 25% Discount on this Festival..
+					<br> To View all yours Orders SignIn First..
+				</marquee>
+
+				<div class="col-2">
+					<h1>
+						Give your workout<br> A New Style!
+					</h1>
+
+					<p></p>
+
+					<a href="products.jsp" class="btn">Explore Now &#10003;</a>
+
+				</div>
+				<div class="col-2">
+					<img src="images/image1.png" onclick="setdata();">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="cat">
+		<div class="small-cat">
+			<div class="row">
+				<div class="col-3">
+					<a href="Tshirt.jsp"><img src="images/buy-1.jpg"></a>
+				</div>
+				<div class="col-3">
+					<a href="shoes.jsp"><img src="images/buy-2.jpg"></a>
+				</div>
+				<div class="col-3">
+					<a href="pant.jsp"><img src="images/buy-3.jpg"></a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="small-cat">
+		<h2 class="title">Featured Products</h2>
+		<div class="row">
+			<div class="col-4">
+				<a href="shoes.jsp"><img src="images/category-1.jpg"></a>
+				<h4>HRX Shoes</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+						class="fa fa-star"></i> <i class="fa fa-star-o"></i> <i
+						class="fa fa-star-half-o"></i>
+				</div>
+				<p>Starting from $100.00 only</p>
+			</div>
+			<div class="col-4">
+				<img src="images/category-2.jpg">
+				<h4>New Mens Foot Wear</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+						class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+						class="fa fa-star"></i>
+				</div>
+				<p>Starting from $30.00 only</p>
+			</div>
+			<div class="col-4">
+				<img src="images/category-3.jpg">
+				<h4>Sweeter and Pull Over's</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+						class="fa fa-star-half-o"></i> <i class="fa fa-star-o"></i> <i
+						class="fa fa-star-o"></i>
+				</div>
+				<p>Starting from 1000.00 only</p>
+			</div>
+		</div>
+		<h2 class="title">Latest Products</h2>
+		<div class="row">
+			<div class="col-4">
+				<a href="Tshirt.jsp"><img src="images/product-1.jpg"></a>
+				<h4>Printed T-shirt</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+						class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+						class="fa fa-star"></i>
+				</div>
+				<p>1000</p>
+			</div>
+			<div class="col-4">
+				<a href="shoes.jsp"><img src="images/product-2.jpg"></a>
+				<h4>HRX Shoes</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+						class="fa fa-star"></i> <i class="fa fa-star-half-o"></i> <i
+						class="fa fa-star-o"></i>
+				</div>
+				<p>750</p>
+			</div>
+			<div class="col-4">
+				<a href="pant.jsp"><img src="images/product-3.jpg"></a>
+				<h4>Men's Pant</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+						class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+						class="fa fa-star"></i>
+				</div>
+				<p>1500</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-4">
+				<a href="pumablue.jsp"><img src="images/product-4.jpg"></a>
+				<h4>Puma Branded T-shirt</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+						class="fa fa-star"></i> <i class="fa fa-star-half-o"></i> <i
+						class="fa fa-star-o"></i>
+				</div>
+				<p>1500</p>
+			</div>
+			<div class="col-4">
+				<img src="images/product-5.jpg">
+				<h4>Sport's shoes</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+						class="fa fa-star-half-o"></i> <i class="fa fa-star-o"></i> <i
+						class="fa fa-star-o"></i>
+				</div>
+				<p>$90.00</p>
+			</div>
+			<div class="col-4">
+				<img src="images/product-6.jpg">
+				<h4>Puma Branded T-shirt</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+						class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+						class="fa fa-star"></i>
+				</div>
+				<p>1500</p>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="offer">
+		<div class="small-cat">
+			<div class="row">
+				<div class="col-2">
+					<img src="images/exclusive.png" class="offerimg">
+				</div>
+				<div class="col-2">
+					<p>MI Smart Band 9 Launched with New and Enanched Features</p>
+					<h1>Smart Band 9</h1>
+					<small>Mi Smart Band Brings Technology to your Hands at Low
+						Price and Best in the Market. Dont miss this LMIMTED OFFER </small> <br>
+					<a href="miband.jsp" class="btn">Buy Now &#8594;</a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="test">
+		<div class="small-cat">
+			<div class="row">
+				<div class="col-3">
+					<i class="fa fa-quote-left"></i>
+					<p>Best Shopping Experience I Ever had</p>
+					<div class="rating">
+						<i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+							class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+							class="fa fa-star"></i>
+					</div>
+					<img src="images/user-2.png">
+					<h3>ubuntu</h3>
+				</div>
+				<div class="col-3">
+					<i class="fa fa-quote-left"></i>
+					<p>This is the Best in the Market</p>
+					<div class="rating">
+						<i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+							class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+							class="fa fa-star-o"></i>
+					</div>
+					<img src="images/user-1.png">
+					<h3>Windows</h3>
+				</div>
+
+				<div class="col-3">
+					<i class="fa fa-quote-left"></i>
+					<p>ok</p>
+					<div class="rating">
+						<i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+							class="fa fa-star"></i> <i class="fa fa-star-o"></i> <i
+							class="fa fa-star-o"></i>
+					</div>
+					<img src="images/user-3.png">
+					<h3>Mack</h3>
+
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+
+	<div class="brands">
+		<div class="small-cat">
+			<div class="row">
+				<div class="col-5">
+					<img src="images/logo-coca-cola.png">
+				</div>
+				<div class="col-5">
+					<img src="images/logo-godrej.png">
+				</div>
+				<div class="col-5">
+					<img src="images/logo-oppo.png">
+				</div>
+				<div class="col-5">
+					<img src="images/logo-paypal.png">
+				</div>
+				<div class="col-5">
+					<img src="images/logo-philips.png">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="cat">
+			<div class="row">
+
+				<div class="footer-col-1">
+					<h3>Download our App</h3>
+					<p>Download App for Andriod and ios mobile phone.</p>
+					<div class="applogo">
+						<img src="images/play-store.png"> <img
+							src="images/app-store.png">
+
+					</div>
+				</div>
+				<div class="footer-col-2">
+
+					<p>Be a Game Changer. The World is already Full of Players</p>
+				</div>
+
+				<div class="footer-col-1">
+					<h3>Useful links</h3>
+					<ul>
+						<li>Coupons</li>
+						<li>Blog Post</li>
+						<li>Return Policy</li>
+						<li>Join Affiliate</li>
+					</ul>
+
+				</div>
+				<div class="footer-col-1">
+					<h3>Follow us</h3>
+					<ul>
+						<li>Facebook</li>
+						<li>Twitter</li>
+						<li>Instagram</li>
+						<li>YouTube</li>
+					</ul>
+
+				</div>
+
+			</div>
+		</div>
+		<hr>
+		<p class="copyright">By Suprith</p>
+	</div>
+
+	<script type="text/javascript">
+		var menuItems = document.getElementById("menuItems");
+
+		menuItems.style.maxHeight = "0px";
+
+		function menutoggle() {
+			if (menuItems.style.maxHeight == "0px") {
+				menuItems.style.maxHeight = "200px"
+			} else {
+				menuItems.style.maxHeight = "0px"
+			}
+
+		}
+	</script>
+</body>
+</html>
