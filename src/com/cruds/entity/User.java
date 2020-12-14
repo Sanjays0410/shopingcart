@@ -1,4 +1,4 @@
-package com.cruds.classes;
+package com.cruds.entity;
 
 public class User {
 

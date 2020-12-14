@@ -1,4 +1,4 @@
-	package com.cruds.dateutil;
+	package com.cruds.date;
 
 	import java.text.ParseException;
 	import java.text.SimpleDateFormat;

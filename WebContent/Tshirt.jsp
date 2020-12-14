@@ -1,5 +1,5 @@
 <%@page import="com.cruds.db.ProductDAO"%>
-<%@page import="com.cruds.classes.Product"%>
+<%@page import="com.cruds.entity.Product"%>
 <%@page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
@@ -18,7 +18,7 @@
 	href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="jquery-3.5.1.min.js"></script>
 <script type="text/javascript"
-	  href="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	 href="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </head>
 <body>

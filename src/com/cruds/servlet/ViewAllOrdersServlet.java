@@ -9,8 +9,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import com.cruds.classes.Orderitem;
+
 import com.cruds.db.OrderListDAO;
+import com.cruds.entity.Orderitem;
 
 /**
  * Servlet implementation class ViewAllOrdersServlet

@@ -1,8 +1,8 @@
 <%@page import="sun.net.www.content.text.plain"%>
-<%@page import="com.cruds.classes.Cart"%>
-<%@page import="com.cruds.classes.Product"%>
+<%@page import="com.cruds.entity.Cart"%>
+<%@page import="com.cruds.entity.Product"%>
 <%@page import="java.util.List"%>
-<%@page import="com.cruds.classes.User"%>
+<%@page import="com.cruds.entity.User"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -99,6 +99,7 @@ h1 {
 				<th>Quantity</th>
 				<th>Total</th>
 			</tr>
+			
 			<%
 				List<Product> list = (List<Product>) session.getAttribute("list");
 				if (list != null) {
@@ -179,24 +180,23 @@ h1 {
 
 				</td>
 			</tr>
-			<%
-				}
-			%>
-			<%
-				}
-			%>
-
+			
+			
+			 <%
+		}
+	%> 
+			
 		</table>
 
 		<div class="total-price">
 
 			<table>
 
-				<%
+				<%--  <%
 					List<Product> plist = (List<Product>) session.getAttribute("list");
 					if (plist != null) {
-				%>
-
+				%> --%>
+ 
 				<tr>
 					<td class="value-button" id="decrease" onclick="decreaseValue()">SubTotal</td>
 					<td>
@@ -245,7 +245,7 @@ h1 {
  %>
 					</td>
 				</tr>
-				</tr>
+				
 				<tr>
 					<td class="value-button" id="increase" onclick="increaseValue()"> Final Total</td>
 					<td>
@@ -255,6 +255,8 @@ h1 {
 						%> <%=finto%> <%
  	}
  %>
+ 
+ 
 
 					</td>
 				</tr>
@@ -268,12 +270,15 @@ h1 {
 
 	</div>
 
+	
 	<%
-		}
-	%>
-
-
-
+				}
+			%>
+  
+			
+    <%--   <%} %> --%>
+          
+          
 	<!-- <div class="footer">
 		<div class="cat">
 			<div class="row">

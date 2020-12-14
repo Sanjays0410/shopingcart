@@ -8,8 +8,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import com.cruds.classes.Product;
+
 import com.cruds.db.ProductDAO;
+import com.cruds.entity.Product;
 
 /**
  * Servlet implementation class ProductServlet

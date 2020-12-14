@@ -1,7 +1,7 @@
-<%@page import="com.cruds.classes.Orderitem"%>
+<%@page import="com.cruds.entity.Orderitem"%>
 <%@page import="java.util.List"%>
-<%@page import="com.cruds.classes.User"%>
-<%@page import="com.cruds.classes.Orderitem"%>
+<%@page import="com.cruds.entity.User"%>
+<%@page import="com.cruds.entity.Orderitem"%>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Shopping Cart</title>
 <link rel="stylesheet" type="text/css" href="style.css">

@@ -7,7 +7,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.cruds.classes.Product;
+import com.cruds.entity.Product;
 
 public class ProductDAO {
 

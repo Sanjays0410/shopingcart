@@ -9,12 +9,12 @@ import javax.servlet.http.HttpSessionListener;
  * Application Lifecycle Listener implementation class demosessionlistener
  *
  */
-public class demosessionlistener implements HttpSessionListener,HttpSessionAttributeListener{
+public class Demosessionlistener implements HttpSessionListener,HttpSessionAttributeListener{
 
     /**
      * Default constructor. 
      */
-    public demosessionlistener() {
+    public Demosessionlistener() {
         // TODO Auto-generated constructor stub
     }
 

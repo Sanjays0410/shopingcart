@@ -6,8 +6,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import com.cruds.classes.User;
+
 import com.cruds.db.UserDAO;
+import com.cruds.entity.User;
 
 /**
  * Servlet implementation class LoginServlet

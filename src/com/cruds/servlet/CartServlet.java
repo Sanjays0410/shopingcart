@@ -10,9 +10,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import com.cruds.classes.Cart;
-
-import com.cruds.classes.Product;
+import com.cruds.entity.Cart;
+import com.cruds.entity.Product;
 
 /**
  * Servlet implementation class CartServlet

@@ -5,7 +5,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import com.cruds.classes.User;
+import com.cruds.entity.User;
 
 public class UserDAO {
 

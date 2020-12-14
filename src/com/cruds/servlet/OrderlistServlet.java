@@ -1,6 +1,7 @@
 package com.cruds.servlet;
 
 import java.io.IOException;
+
 import java.util.List;
 
 import javax.servlet.RequestDispatcher;
@@ -10,10 +11,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import com.cruds.classes.Orderitem;
-import com.cruds.classes.Product;
-import com.cruds.dateutil.Dateutil;
+import com.cruds.date.Dateutil;
 import com.cruds.db.OrderListDAO;
+import com.cruds.entity.Orderitem;
+import com.cruds.entity.Product;
 
 /**
  * Servlet implementation class orderlist

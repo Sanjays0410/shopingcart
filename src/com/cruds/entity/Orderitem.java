@@ -1,4 +1,4 @@
-package com.cruds.classes;
+package com.cruds.entity;
 
 import java.util.Date;
 

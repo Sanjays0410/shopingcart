@@ -9,8 +9,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import com.cruds.classes.Orderitem;
-import com.cruds.classes.Product;
+import com.cruds.entity.Orderitem;
+import com.cruds.entity.Product;
 
 /**
  * Servlet implementation class RemoveServlet
@@ -40,6 +40,7 @@ public class RemoveServlet extends HttpServlet {
 
 		System.out.println("list============"+list);
 
+		
 		int sum = 0;
 		float totalsum = 0f;
 		//disc is used to show discount value in int
@@ -52,15 +53,17 @@ public class RemoveServlet extends HttpServlet {
 		float ta=(100+tax);
 		
 		float finaltotalwithtax=0;
-
-		Orderitem o=new Orderitem();
-		
+	
 		list.remove(0);
-		session.setAttribute("list",list);
+		
+		if(list.size()==0)
+		{
+			session.removeAttribute("list");
+		}
 		
 		for(Product p1:list)
 		{
-
+			
 			sum+=Integer.valueOf(p1.getItemprice());
 
 			session.setAttribute("total",Integer.toString(sum));

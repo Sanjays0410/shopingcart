@@ -8,9 +8,10 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
-import com.cruds.classes.Orderitem;
-import com.cruds.classes.Product;
-import com.cruds.dateutil.Dateutil;
+
+import com.cruds.date.Dateutil;
+import com.cruds.entity.Orderitem;
+import com.cruds.entity.Product;
 
 
 public class OrderListDAO {

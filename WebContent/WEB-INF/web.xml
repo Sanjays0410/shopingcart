@@ -4,14 +4,14 @@
   <display-name>ShoppingCart</display-name>
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
-    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.html</welcome-file>
     <welcome-file>index.jsp</welcome-file>
     <welcome-file>default.html</welcome-file>
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
   <listener>
-    <listener-class>com.cruds.listener.demosessionlistener</listener-class>
+    <listener-class>com.cruds.listener.Demosessionlistener</listener-class>
   </listener>
   <listener>
     <listener-class>com.cruds.listener.MyContextListener</listener-class>
