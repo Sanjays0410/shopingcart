@@ -10,8 +10,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import com.cruds.db.UserDAO;
 import com.cruds.entity.Cart;
 import com.cruds.entity.Product;
+import com.cruds.entity.User;
 
 /**
  * Servlet implementation class CartServlet
@@ -43,6 +45,8 @@ public class CartServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 
+		
+		
 		String id=request.getParameter("itemid");
 		String name=request.getParameter("itemname");
 		String price=request.getParameter("itemprice");
@@ -61,7 +65,6 @@ public class CartServlet extends HttpServlet {
 		session.setAttribute("quantity", quantity);
 
 
-
 		/*Cart cart=(Cart)session.getAttribute("CART");
 		if(cart==null)
 		{
@@ -78,6 +81,7 @@ public class CartServlet extends HttpServlet {
 		List<Product> list= (List<Product>) session.getAttribute("list");
 
 
+		
 		/*if(list==null)
 		{
 
@@ -150,7 +154,7 @@ public class CartServlet extends HttpServlet {
 			
 				
 		}
-
+			
 		RequestDispatcher rs=request.getRequestDispatcher("products.jsp");
 		rs.forward(request, response);
 

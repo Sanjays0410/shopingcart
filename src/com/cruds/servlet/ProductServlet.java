@@ -1,6 +1,7 @@
 package com.cruds.servlet;
 
 import java.io.IOException;
+
 import java.util.List;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -9,7 +10,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import com.cruds.db.OrderListDAO;
 import com.cruds.db.ProductDAO;
+import com.cruds.entity.Orderitem;
 import com.cruds.entity.Product;
 
 /**
@@ -39,7 +42,7 @@ public class ProductServlet extends HttpServlet {
 		//int item=1;
 
 
-		String it=String.valueOf(1);
+		/*String it=String.valueOf(1);
 
 
 		List<Product> p=new ProductDAO().getall(it);
@@ -53,6 +56,15 @@ public class ProductServlet extends HttpServlet {
 
 
 		RequestDispatcher rd=request.getRequestDispatcher("Index.jsp");
+		rd.forward(request, response);*/
+		
+		
+		String orderid=(String) session.getAttribute("orderid");
+		
+		List<Orderitem> list1=(List<Orderitem>) new OrderListDAO().Fetchproduct(orderid);
+		session.setAttribute("PRODUCT_LIST", list1);
+		
+		RequestDispatcher rd=request.getRequestDispatcher("viewbasedorderid.jsp");
 		rd.forward(request, response);
 
 	}

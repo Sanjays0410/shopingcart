@@ -7,9 +7,10 @@ public class Orderitem {
 	private int orderid;
 	private int itemid;
 	private String email;
+	private String name;
 	private String price;
 	private String Qty;
-	private String name;
+	
 	private String Image;
 	private String total;
 	private Date order_date;
@@ -34,7 +35,16 @@ public class Orderitem {
 	}
 
 
-	public Orderitem(int orderid, String price, String qty, String name, String status , Date issue_date, String image) {
+	
+
+	public Orderitem(String name, String price, String qty) {
+		super();
+		this.name = name;
+		this.price = price;
+		Qty = qty;
+	}
+
+	public Orderitem(int orderid, String price, String qty, String name, String status , Date issue_date, String image,int itemid) {
 		super();
 		this.orderid = orderid;
 		this.price = price;
@@ -43,6 +53,7 @@ public class Orderitem {
 		this.status = status;
 		this.order_date = issue_date;
         this.Image = image;
+        this.itemid=itemid;
 	}
 
 	public String getStatus() {

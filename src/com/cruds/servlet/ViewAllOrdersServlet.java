@@ -1,7 +1,6 @@
 package com.cruds.servlet;
 
 import java.io.IOException;
-
 import java.util.List;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -9,7 +8,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-
+ 
 import com.cruds.db.OrderListDAO;
 import com.cruds.entity.Orderitem;
 
@@ -40,12 +39,14 @@ public class ViewAllOrdersServlet extends HttpServlet {
 
 
 		List<Orderitem> list=(List<Orderitem>) new OrderListDAO().orders(email);
+		
 
 		session.setAttribute("ORDER_LIST", list);
-
+		
 
 		RequestDispatcher rd=request.getRequestDispatcher("orderitem.jsp");
 		rd.forward(request,response);
+		
 
 	}
 

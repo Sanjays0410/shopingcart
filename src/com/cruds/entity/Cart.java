@@ -1,4 +1,4 @@
-package com.cruds.entity;
+ package com.cruds.entity;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -7,8 +7,7 @@ public class Cart {
 	private Product product;
 	 private String quantity;
 	
-	
-		 
+	 
 	public Cart() {
 		super();
 	}
@@ -26,7 +25,7 @@ public class Cart {
 		return product;
 	}
 	public void setProduct(Product product) {
-		this.product = product;
+		this.product = product; 
 	}
 	public String getQuantity() {
 		return quantity;
@@ -34,6 +33,7 @@ public class Cart {
 	public void setQuantity(String quantity) {
 		this.quantity = quantity;
 	}
+	
 	
 	public 	List<Product> addtocart( List<Product> list,Product p)
 	{
@@ -45,6 +45,7 @@ public class Cart {
 				
 		return list;
 	}
+	
 	@Override
 	public String toString() {
 		return "Cart [product=" + product + ", quantity=" + quantity + "]";

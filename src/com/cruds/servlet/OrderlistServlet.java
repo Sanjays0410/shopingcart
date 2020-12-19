@@ -52,7 +52,7 @@ public class OrderlistServlet extends HttpServlet {
 		String email=(String)session.getAttribute("email");
 
 
-		OrderListDAO dao=new OrderListDAO();
+		OrderListDAO dao=new OrderListDAO(); 
 
 
 		List<Product> list= (List<Product>) session.getAttribute("list");
@@ -65,17 +65,23 @@ public class OrderlistServlet extends HttpServlet {
 
 		
 			if((dao.finalorder(list,ol)))
-
+ 
 			{
 				/*List<OrderList> o=(List<OrderList>) dao.orders(email);
 				System.out.println( "orderssssssssssssssssssssssssssssssssssssssssss"+o);*/
 				Orderitem orderid=dao.fetchorderid(email);
+				session.removeAttribute("list");
 				session.setAttribute("MESSAGE","Yours order is placed order id is --> "+orderid);
+				session.removeAttribute("list");
+				session.setAttribute("orderid",String.valueOf(orderid));
+				
+				//session.setAttribute("orderid", String.valueOf(orderid));
+				
 				RequestDispatcher rs=request.getRequestDispatcher("ViewOrdersid.jsp");
 				rs.forward(request, response);
 				
 			}
-
+  
 			else  
 			{
 				request.setAttribute("MESSAGE","Error");

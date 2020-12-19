@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
-
   <display-name>ShoppingCart</display-name>
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
@@ -95,5 +94,15 @@
   <servlet-mapping>
     <servlet-name>ViewAllOrdersServlet</servlet-name>
     <url-pattern>/ViewAllOrdersServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>UserCheckServlet</display-name>
+    <servlet-name>UserCheckServlet</servlet-name>
+    <servlet-class>com.cruds.servlet.UserCheckServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserCheckServlet</servlet-name>
+    <url-pattern>/UserCheckServlet</url-pattern>
   </servlet-mapping>
 </web-app>

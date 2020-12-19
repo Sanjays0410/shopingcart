@@ -2,6 +2,8 @@
 <%@page import="java.util.List"%>
 <%@page import="com.cruds.entity.User"%>
 <%@page import="com.cruds.entity.Orderitem"%>
+<html>
+<head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Shopping Cart</title>
 <link rel="stylesheet" type="text/css" href="style.css">
@@ -11,7 +13,9 @@
 <link rel="stylesheet" type="text/css"
 	href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="jav.js">
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+<link
+	href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap"
+	rel="stylesheet">
 </head>
 <body>
 
@@ -33,13 +37,13 @@
 		</div>
 	</div>
 
-	
+
 
 	<div></div>
-<br>
-<br>
+	<br>
+	<br>
 
-<style>
+	<style>
 h1 {
 	/* font-family: 'Cookie', cursive;
         font-size: "30px";
@@ -47,12 +51,12 @@ h1 {
 	font-family: 'Sacramento', cursive;
 	font-size: "35px";
 	color: #800040;
-	 text-align: center;
+	text-align: center;
 }
 </style>
 
 
-<%
+	<%
 		User msg = (User) session.getAttribute("MESS");
 
 		if (msg != null) {
@@ -65,14 +69,12 @@ h1 {
 	<%
 		}
 	%>
-	
-	
+
+
 	<div class="row">
-				<marquee class="margin">
-					Here its all yours Orders :)
-				</marquee>
-				</div>
-	
+		<marquee class="margin"> Here its all yours Orders :) </marquee>
+	</div>
+
 
 
 
@@ -89,11 +91,11 @@ h1 {
 
 
 	<div></div>
-	
-	
-	
-	
-	
+
+
+
+
+
 
 	<form action="OrderlistServlet" method="post"></form>
 
@@ -103,25 +105,26 @@ h1 {
 
 
 	<div class="small-cat cart-page">
-	
-	<style>
-	
-	td,th{
-  text-align: center;
+
+		<style>
+td, th {
+	text-align: center;
 }
-	</style>
+</style>
 
 		<table border="1">
 			<thead>
 				<tr>
 					<!-- <th> Item Image</th> -->
-					<th>Item Name</th>
+
 					<th>Order id</th>
-					<th>Item Price</th> 
-					<th>Item Quantity</th>
+					<th> Item id</th>
+					<th> Item name</th>
+					<th> Item price</th>
+					<th> Item Qty</th>
 					<th>Order Date(yyyy/mm/dd)</th>
 					<th>Order Status</th>
-					
+
 				</tr>
 			</thead>
 
@@ -132,16 +135,29 @@ h1 {
 				%>
 				<tr>
 					<%-- <td><%=o.getImage()%></td> --%>
-					<td><%=o.getName()%></td>
-					<td><%=o.getOrderid()%></td>
-					<td><%=o.getPrice()%></td>
-					<td><%=o.getQty()%></td>
+
+					<%-- <td><a href="ProductServlet"><%
+									String orderid = String.valueOf(o.getOrderid());
+											if (orderid != null) {
+								%>
+								<%=orderid%>
+								<%
+									}
+								%> 
+								
+					</a></td>
+ --%>
+ 					<td> <%=o.getOrderid() %></td>
+ 					<td> <%=o.getItemid() %>
+ 					<td> <%=o.getName() %>
+ 					<td> <%=o.getPrice() %>
+ 					<td> <%=o.getQty() %>
 					<td><%=o.getOrder_date() %></td>
 					<td><%=o.getStatus() %></td>
-					
-				
+
+
 				</tr>
-					<%
+				<%
 					}
 					}
 				%>
